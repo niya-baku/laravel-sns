@@ -17,8 +17,8 @@
               <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="md-form">
-                  <label for="name">ユーザー名</label>
-                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                  <label for="name"></label>
+                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="ユーザー名" value="{{ old('name') }}" required autocomplete="name" autofocus>
                   <small>英数字3〜16文字(登録後の変更はできません)</small>
                     @error('name')
                     <span class="invalid-feedback" role="alert">
@@ -27,8 +27,8 @@
                     @enderror
                 </div>
                 <div class="md-form">
-                  <label for="email">メールアドレス</label>
-                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                  <label for="email"></label>
+                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="メールアドレス"value="{{ old('email') }}" required autocomplete="email">
                     @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -36,8 +36,8 @@
                     @enderror
                 </div>
                 <div class="md-form">
-                  <label for="password">パスワード</label>
-                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                  <label for="password"></label>
+                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="パスワード "name="password" required autocomplete="new-password">
                     @error('password')
                     <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
@@ -45,8 +45,8 @@
                     @enderror
                 </div>
                 <div class="md-form">
-                  <label for="password_confirmation">パスワード(確認)</label>
-                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                  <label for="password_confirmation"></label>
+                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="パスワード(確認)" required autocomplete="new-password">
                 </div>
                 <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">ユーザー登録</button>
               </form>

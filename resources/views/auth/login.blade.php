@@ -18,8 +18,8 @@
                 @csrf
 
                 <div class="md-form">
-                  <label for="email">メールアドレス</label>
-                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                  <label for="email"></label>
+                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="メールアドレス" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                     @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -29,8 +29,8 @@
                 </div>
 
                 <div class="md-form">
-                  <label for="password">パスワード</label>
-                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                  <label for="password"></label>
+                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="パスワード" required autocomplete="current-password">
 
                     @error('password')
                     <span class="invalid-feedback" role="alert">
