@@ -21,8 +21,8 @@
                 <input type="hidden" name="token" value="{{ $token }}">
 
                 <div class="md-form">
-                  <label for="password">新しいパスワード</label>
-                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                  <label for="password"></label>
+                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="新しいパスワード"  required autocomplete="new-password">
 
                     @error('password')
                     <span class="invalid-feedback" role="alert">
@@ -32,8 +32,8 @@
                 </div>
 
                 <div class="md-form">
-                  <label for="password_confirmation">新しいパスワード(再入力)</label>
-                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                  <label for="password_confirmation"></label>
+                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="新しいパスワード(再入力)"  required autocomplete="new-password">
                 </div>
 
                 <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">送信</button>

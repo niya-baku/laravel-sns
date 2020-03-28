@@ -1,6 +1,6 @@
 下記のURLからパスワードの再設定を行って下さい。
 
-{{ $url }}
+<a href="{{ $url }}">{{ $url }}</a>
 
 このURLの有効期間は{{ $count }}分です。
 
@@ -8,4 +8,4 @@
 
 その場合は、このメールは破棄していただいて結構です。
 
-memo({{ url(config('app.url')) }})
+memo(<a href=" url(config('app.url')) }}">url(config('app.url'))</a>")
